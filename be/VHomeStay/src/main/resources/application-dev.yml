@@ -1,0 +1,84 @@
+# DB
+spring:
+  google:
+    cloud:
+      storage:
+        credentials:
+          location: classpath:hmong-pavi-village-1c41ed58d3a7.json
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+
+  firebase:
+    googleCredentials: hbs-notifications-firebase-adminsdk-vov4z-fcf69bb180.json
+
+  mvc:
+    throw-exception-if-no-handler-found: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+    url: jdbc:mysql://localhost:3306/hbs_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false
+
+    username: root
+    password:
+
+
+
+  # Mail
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: orandaranchuf1@gmail.com
+    password: icwaeiwtufdxzcvh
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  thymeleaf:
+    enabled: true
+    check-template-location: true
+
+  # JPA
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  web:
+    resources:
+      add-mappings: false
+
+#server
+server:
+  port: 8080
+
+# JWT
+security:
+  # JWT
+  jwt:
+    secret-key: HomestayAmazingMeoVacForHMongPeopleInPaViVillage2023
+    expiration: 854000000
+    refresh-token:
+      expiration: 7200000
+    token:
+      expiration: 900000
+logging:
+  level:
+    org.springframework.web: debug
+    org.hibernate: error
+
+#cloudinary
+cloudinary:
+  cloud_name: dzdpfyjh8
+  api_key: 995998533339222
+  api_secret: yjPfsgeUbNeto7A6W-Jxt7FiMgw
+

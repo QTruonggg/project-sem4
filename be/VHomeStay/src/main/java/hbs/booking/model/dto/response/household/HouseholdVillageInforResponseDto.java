@@ -1,0 +1,19 @@
+package hbs.booking.model.dto.response.household;
+
+import hbs.booking.model.dto.response.homestay.HomestayForSearchRoomManagerResponseDto;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import java.util.List;
+
+@ToString
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class HouseholdVillageInforResponseDto {
+    private Long id;
+    private String householdName;
+    private List<HomestayForSearchRoomManagerResponseDto> homestays;
+}

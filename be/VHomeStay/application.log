@@ -1,0 +1,92 @@
+2023-07-20T14:24:17.108+07:00  INFO 19608 --- [main] hbs.booking.AmazingMeoVacApplication     : Starting AmazingMeoVacApplication using Java 19.0.1 with PID 19608 (D:\CapstoneProjectForCloneCode\amazing-meo-vac\AmazingMeoVac\target\classes started by Admin in D:\CapstoneProjectForCloneCode\amazing-meo-vac\AmazingMeoVac)
+2023-07-20T14:24:17.111+07:00  INFO 19608 --- [main] hbs.booking.AmazingMeoVacApplication     : The following 1 profile is active: "dev"
+2023-07-20T14:24:18.236+07:00  INFO 19608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T14:24:18.383+07:00  INFO 19608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 25 JPA repository interfaces.
+2023-07-20T14:24:19.016+07:00  INFO 19608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T14:24:19.028+07:00  INFO 19608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T14:24:19.029+07:00  INFO 19608 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-07-20T14:24:19.187+07:00  INFO 19608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T14:24:19.188+07:00  INFO 19608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2007 ms
+2023-07-20T14:24:19.397+07:00  INFO 19608 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T14:24:19.442+07:00  INFO 19608 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-07-20T14:24:19.717+07:00  INFO 19608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T14:24:19.911+07:00  INFO 19608 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7da77305
+2023-07-20T14:24:19.913+07:00  INFO 19608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T14:24:19.964+07:00  INFO 19608 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-07-20T14:24:21.780+07:00  INFO 19608 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T14:24:21.795+07:00  INFO 19608 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T14:24:25.974+07:00  WARN 19608 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T14:24:26.275+07:00  INFO 19608 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@edc900a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a09b982, org.springframework.security.web.context.SecurityContextHolderFilter@a2dc92d, org.springframework.security.web.header.HeaderWriterFilter@28d38288, org.springframework.web.filter.CorsFilter@77e0d62f, org.springframework.security.web.authentication.logout.LogoutFilter@41621744, hbs.booking.security.JWTFilter@528a7eea, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@e35d91b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@754a38a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@475ecd46, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@383ce871, org.springframework.security.web.session.SessionManagementFilter@47a74bd0, org.springframework.security.web.access.ExceptionTranslationFilter@34923f7f, org.springframework.security.web.access.intercept.AuthorizationFilter@3aa1669a]
+2023-07-20T14:24:26.573+07:00  INFO 19608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T14:24:26.582+07:00  INFO 19608 --- [main] hbs.booking.AmazingMeoVacApplication     : Started AmazingMeoVacApplication in 10.065 seconds (process running for 11.024)
+2023-07-20T14:24:53.825+07:00  INFO 19608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T14:24:53.826+07:00  INFO 19608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T14:24:53.829+07:00  INFO 19608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-20T14:24:54.078+07:00 ERROR 19608 --- [http-nio-8080-exec-1] hbs.booking.security.AuthEntryPointJwt   : Unauthorized error: Full authentication is required to access this resource
+2023-07-20T14:24:54.101+07:00 ERROR 19608 --- [http-nio-8080-exec-1] hbs.booking.security.AuthEntryPointJwt   : Unauthorized error: Full authentication is required to access this resource
+2023-07-20T14:25:09.192+07:00  INFO 19608 --- [http-nio-8080-exec-3] h.b.c.manager.ManagerReportController    : Info level log message
+2023-07-20T14:25:09.193+07:00 ERROR 19608 --- [http-nio-8080-exec-3] h.b.c.manager.ManagerReportController    : Error level log message
+2023-07-20T14:25:09.194+07:00 ERROR 19608 --- [http-nio-8080-exec-3] h.b.c.manager.ManagerReportController    : Fatal level log message
+2023-07-20T14:37:59.104+07:00  INFO 19608 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T14:37:59.107+07:00  INFO 19608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T14:37:59.115+07:00  INFO 19608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T14:38:02.956+07:00  INFO 20580 --- [main] hbs.booking.AmazingMeoVacApplication     : Starting AmazingMeoVacApplication using Java 19.0.1 with PID 20580 (D:\CapstoneProjectForCloneCode\amazing-meo-vac\AmazingMeoVac\target\classes started by Admin in D:\CapstoneProjectForCloneCode\amazing-meo-vac\AmazingMeoVac)
+2023-07-20T14:38:02.959+07:00  INFO 20580 --- [main] hbs.booking.AmazingMeoVacApplication     : The following 1 profile is active: "dev"
+2023-07-20T14:38:03.736+07:00  INFO 20580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T14:38:03.891+07:00  INFO 20580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 25 JPA repository interfaces.
+2023-07-20T14:38:04.508+07:00  INFO 20580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T14:38:04.517+07:00  INFO 20580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T14:38:04.518+07:00  INFO 20580 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-07-20T14:38:04.613+07:00  INFO 20580 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T14:38:04.613+07:00  INFO 20580 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1612 ms
+2023-07-20T14:38:04.782+07:00  INFO 20580 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T14:38:04.823+07:00  INFO 20580 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-07-20T14:38:05.108+07:00  INFO 20580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T14:38:05.261+07:00  INFO 20580 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31e7afde
+2023-07-20T14:38:05.263+07:00  INFO 20580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T14:38:05.311+07:00  INFO 20580 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-07-20T14:38:06.979+07:00  INFO 20580 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T14:38:06.988+07:00  INFO 20580 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T14:38:10.871+07:00  WARN 20580 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T14:38:11.180+07:00  INFO 20580 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25af5c7f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d27fe0c, org.springframework.security.web.context.SecurityContextHolderFilter@4cfa8095, org.springframework.security.web.header.HeaderWriterFilter@4d127cd7, org.springframework.web.filter.CorsFilter@5c223a13, org.springframework.security.web.authentication.logout.LogoutFilter@4b47e09b, hbs.booking.security.JWTFilter@9a31da0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5bb7e5d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16fdbb17, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bb5270e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56b0f44f, org.springframework.security.web.session.SessionManagementFilter@2e617f42, org.springframework.security.web.access.ExceptionTranslationFilter@a8d8d41, org.springframework.security.web.access.intercept.AuthorizationFilter@1cdb3a1d]
+2023-07-20T14:38:11.503+07:00  INFO 20580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T14:38:11.517+07:00  INFO 20580 --- [main] hbs.booking.AmazingMeoVacApplication     : Started AmazingMeoVacApplication in 9.068 seconds (process running for 9.841)
+2023-07-20T14:38:15.013+07:00  INFO 20580 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T14:38:15.013+07:00  INFO 20580 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T14:38:15.016+07:00  INFO 20580 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-20T14:38:15.442+07:00  INFO 20580 --- [http-nio-8080-exec-2] h.b.c.manager.ManagerReportController    : Info level log message
+2023-07-20T14:38:15.442+07:00 ERROR 20580 --- [http-nio-8080-exec-2] h.b.c.manager.ManagerReportController    : Error level log message
+2023-07-20T14:38:15.442+07:00 ERROR 20580 --- [http-nio-8080-exec-2] h.b.c.manager.ManagerReportController    : Fatal level log message
+2023-07-20T14:41:37.998+07:00  INFO 20580 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T14:41:38.001+07:00  INFO 20580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T14:41:38.018+07:00  INFO 20580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T14:41:40.772+07:00  INFO 8416 --- [main] hbs.booking.AmazingMeoVacApplication     : Starting AmazingMeoVacApplication using Java 19.0.1 with PID 8416 (D:\CapstoneProjectForCloneCode\amazing-meo-vac\AmazingMeoVac\target\classes started by Admin in D:\CapstoneProjectForCloneCode\amazing-meo-vac\AmazingMeoVac)
+2023-07-20T14:41:40.774+07:00  INFO 8416 --- [main] hbs.booking.AmazingMeoVacApplication     : The following 1 profile is active: "dev"
+2023-07-20T14:41:41.591+07:00  INFO 8416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T14:41:41.819+07:00  INFO 8416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 219 ms. Found 25 JPA repository interfaces.
+2023-07-20T14:41:42.478+07:00  INFO 8416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T14:41:42.486+07:00  INFO 8416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T14:41:42.486+07:00  INFO 8416 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-07-20T14:41:42.608+07:00  INFO 8416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T14:41:42.609+07:00  INFO 8416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1787 ms
+2023-07-20T14:41:42.775+07:00  INFO 8416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T14:41:42.820+07:00  INFO 8416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-07-20T14:41:43.092+07:00  INFO 8416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T14:41:43.257+07:00  INFO 8416 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2520aa05
+2023-07-20T14:41:43.259+07:00  INFO 8416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T14:41:43.297+07:00  INFO 8416 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-07-20T14:41:45.039+07:00  INFO 8416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T14:41:45.052+07:00  INFO 8416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T14:41:48.932+07:00  WARN 8416 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T14:41:49.222+07:00  INFO 8416 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@56f8032, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5884d435, org.springframework.security.web.context.SecurityContextHolderFilter@4bfdd751, org.springframework.security.web.header.HeaderWriterFilter@426abed4, org.springframework.web.filter.CorsFilter@7524241d, org.springframework.security.web.authentication.logout.LogoutFilter@1f36bed9, hbs.booking.security.JWTFilter@46b9a780, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@60a781, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56748a6f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d4493cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3faec175, org.springframework.security.web.session.SessionManagementFilter@4f1bfab4, org.springframework.security.web.access.ExceptionTranslationFilter@69c47d27, org.springframework.security.web.access.intercept.AuthorizationFilter@25af5c7f]
+2023-07-20T14:41:49.580+07:00  INFO 8416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T14:41:49.591+07:00  INFO 8416 --- [main] hbs.booking.AmazingMeoVacApplication     : Started AmazingMeoVacApplication in 9.288 seconds (process running for 9.975)
+2023-07-20T14:42:39.002+07:00  INFO 8416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T14:42:39.003+07:00  INFO 8416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T14:42:39.005+07:00  INFO 8416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-20T14:42:39.551+07:00  INFO 8416 --- [http-nio-8080-exec-1] h.b.c.manager.ManagerReportController    : Info level log message
+2023-07-20T14:42:39.551+07:00 ERROR 8416 --- [http-nio-8080-exec-1] h.b.c.manager.ManagerReportController    : Error level log message
+2023-07-20T14:42:39.551+07:00 ERROR 8416 --- [http-nio-8080-exec-1] h.b.c.manager.ManagerReportController    : Fatal level log message
+2023-07-20T14:53:38.629+07:00  INFO 8416 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T14:53:38.632+07:00  INFO 8416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T14:53:38.647+07:00  INFO 8416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
