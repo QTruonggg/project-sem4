@@ -410,7 +410,7 @@ export default function HeaderManager(props: IHeaderManagerProps) {
 
 
     React.useEffect(() => {
-        const socket = new SockJS('https://api.langhmongpavi.com/ws');
+        const socket = new SockJS('http://localhost:8080/api/v1/ws');
         const stompClient = Stomp.over(socket);
 
         stompClient.connect({}, function (frame: any) {
